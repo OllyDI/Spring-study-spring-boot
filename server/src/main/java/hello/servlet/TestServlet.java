@@ -9,6 +9,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
+ * 스프링 부트의 내장 톰캣을 사용하지 않고 옛날 방식 구현
  * http://localhost:8080/test
  */
 
