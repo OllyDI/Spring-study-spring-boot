@@ -12,10 +12,10 @@ repositories {
 
 dependencies {
     //스프링 MVC 추가
-    implementation 'org.springframework:spring-webmvc:6.0.4'
+    implementation 'org.springframework:spring-webmvc:7.0.8'
 
     //내장 톰켓 추가
-    implementation 'org.apache.tomcat.embed:tomcat-embed-core:10.1.5'
+    implementation 'org.apache.tomcat.embed:tomcat-embed-core:11.0.22'
 }
 
 tasks.named('test') {
@@ -23,7 +23,7 @@ tasks.named('test') {
 }
 
 //일반 Jar 생성
-task buildJar(type: Jar) {
+tasks.register('buildJar', Jar) {
     manifest {
         attributes 'Main-Class': 'hello.embed.EmbedTomcatSpringMain'
     }
@@ -31,7 +31,7 @@ task buildJar(type: Jar) {
 }
 
 //Fat Jar 생성
-task buildFatJar(type: Jar) {
+tasks.register('buildFatJar', Jar) {
     manifest {
         attributes 'Main-Class': 'hello.embed.EmbedTomcatSpringMain'
     }
