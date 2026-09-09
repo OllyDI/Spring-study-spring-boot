@@ -11,7 +11,7 @@ import org.springframework.transaction.TransactionManager;
 import javax.sql.DataSource;
 
 @Slf4j
-@Configuration
+//@Configuration    // 주석 처리를 해도 스프링 부트가 알아서 아래의 기능을 자동구성
 public class DbConfig {
 
     @Bean
