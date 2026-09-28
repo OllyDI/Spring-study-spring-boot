@@ -35,4 +35,3 @@ public class MyDataSource {
         log.info("options={}", options);
     }
 }
-
