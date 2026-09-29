@@ -28,7 +28,3 @@ public class MyDataSourceConfigV1 {
                 properties.getEtc().getOptions());
     }
 }
-
-
-
-
