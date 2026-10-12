@@ -20,6 +20,7 @@ management:
       exposure:
         include: "*"
 
+# 만들기도 가능
 info:
   app:
     name: hello-actuator
@@ -29,3 +30,8 @@ info:
 logging:
   level:
     hello.controller: debug
+
+server:
+  tomcat:
+    mbeanregistry:
+      enabled: true
