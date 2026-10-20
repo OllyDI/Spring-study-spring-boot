@@ -35,8 +35,6 @@ public class OrderServiceV3 implements OrderService {
             stock.decrementAndGet();
             sleep();
         });
-
-
     }
 
     private static void sleep() {
